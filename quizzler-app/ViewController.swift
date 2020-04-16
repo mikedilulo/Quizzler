@@ -27,11 +27,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 8)
         questionLabel.text = quizQuestions[questionNumber][0]
+        
+
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
-        questionNumber += 1
-        updateUI()
+        let userAnswer = sender.currentTitle
+        let actualAnswer = quizQuestions[questionNumber][1]
+
+        if userAnswer == actualAnswer {
+            print("Right!")
+        } else {
+            print("Wrong!")
+        }
     }
     
     func updateUI() {
