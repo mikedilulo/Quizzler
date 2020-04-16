@@ -15,6 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     
+    let quizQuestions = [
+    "Rubberbands don't last longer when they are refrigerated",
+    "Peanuts have one ingredient that is used in dynamite",
+    "In Greece, the National Anthem is 158 verses"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
