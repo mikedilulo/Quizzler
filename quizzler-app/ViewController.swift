@@ -9,9 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var questionLabel: UILabel!
-    
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     
@@ -19,9 +19,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 8)
+        questionLabel.text = "Four + Two = Six"
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
+        
     }
     
 }
