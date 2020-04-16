@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     
     @IBOutlet weak var trueButton: UIButton!
+    @IBOutlet weak var falseButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -20,6 +21,8 @@ class ViewController: UIViewController {
         progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 8)
     }
 
-
+    @IBAction func answerButtonPressed(_ sender: UIButton) {
+    }
+    
 }
 
