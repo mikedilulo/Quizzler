@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var progressBar: UIProgressView!
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 8)
     }
 
 
