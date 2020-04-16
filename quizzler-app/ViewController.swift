@@ -21,10 +21,12 @@ class ViewController: UIViewController {
     "In Greece, the National Anthem is 158 verses"
     ]
     
+    var questionNumber = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 8)
-        questionLabel.text = "Four + Two = Six"
+        questionLabel.text = quizQuestions[questionNumber]
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
