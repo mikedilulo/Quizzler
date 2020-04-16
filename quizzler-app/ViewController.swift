@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 8)
-        questionLabel.text = quizQuestions[questionNumber]
+        questionLabel.text = quizQuestions[questionNumber][0]
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
     
     func updateUI() {
-        questionLabel.text = quizQuestions[questionNumber]
+        questionLabel.text = quizQuestions[questionNumber][0]
     }
     
 }
