@@ -51,8 +51,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="falseButton" destination="u63-vh-0Am" id="GPG-Gj-uYB"/>
                         <outlet property="progressBar" destination="aQm-9b-OXZ" id="bh0-kB-NZq"/>
                         <outlet property="questionLabel" destination="CPa-U4-XWB" id="Crb-s1-ENs"/>
+                        <outlet property="trueButton" destination="6up-9t-KLR" id="3r1-FQ-keE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
