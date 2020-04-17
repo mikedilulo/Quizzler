@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
 
     
-    var questionNumber = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

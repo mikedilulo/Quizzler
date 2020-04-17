@@ -27,4 +27,6 @@ struct QuizBrain {
         Question(q: "The name of the 50 states are on the back of the 5 dollar bill", a: "True"),
         Question(q: "Almonds are a member of the peach family", a: "True")
     ]
+    
+    var questionNumber = 0
 }
