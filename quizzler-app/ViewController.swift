@@ -16,9 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var falseButton: UIButton!
     
     let quizQuestions = [
-        Question(text: "Rubberbands don't last longer when they are refrigerated", answer: "False"),
-        Question(text: "Peanuts have one ingredient that is used in dynamite", answer: "True"),
-        Question(text: "In Greece, the National Anthem is 158 verses", answer: "True")
+        Question(q: "Rubberbands don't last longer when they are refrigerated", a: "False"),
+        Question(q: "Peanuts have one ingredient that is used in dynamite", a: "True"),
+        Question(q: "In Greece, the National Anthem is 158 verses", a: "True")
     ]
     
     var questionNumber = 0
