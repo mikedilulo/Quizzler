@@ -54,11 +54,14 @@ class ViewController: UIViewController {
         } else {
             questionNumber = 0
         }
-        updateUI()
+        
+        Timer.scheduledTimer(timeInterval: 0.2, target:self, selector: #selector(updateUI), userInfo: nil,  repeats: false)
     }
     
-    func updateUI() {
+    @objc func updateUI() {
         questionLabel.text = quizQuestions[questionNumber].text
+        trueButton.backgroundColor = UIColor.clear
+        falseButton.backgroundColor = UIColor.clear
     }
     
 }
