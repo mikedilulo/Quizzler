@@ -47,7 +47,8 @@ struct QuizBrain {
         return progress
     }
     
-    func nextQuestion() {
+    // Replace old value of questions with the new value using mutating keyword
+    mutating func nextQuestion() {
         if questionNumber + 1 < quizQuestions.count {
             questionNumber += 1
         } else {
