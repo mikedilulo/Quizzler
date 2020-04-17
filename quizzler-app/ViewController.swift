@@ -26,7 +26,8 @@ class ViewController: UIViewController {
         Question(q: "There are less chickens than people in the world", a: "False"),
         Question(q: "In Greece, the National Anthem is 158 verses", a: "True"),
         Question(q: "New Jersey grows 2/3 of the world's eggplants", a: "True"),
-        Question(q: "The longest one syllabus word in the English language is 'screeched'", a: "True")
+        Question(q: "The longest one syllabus word in the English language is 'screeched'", a: "True"),
+        Question(q: "In the movie Pulp Fiction, all clocks are stuck on 4:20", a: "True")
     ]
     
     var questionNumber = 0
