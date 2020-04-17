@@ -27,7 +27,11 @@ class ViewController: UIViewController {
         Question(q: "In Greece, the National Anthem is 158 verses", a: "True"),
         Question(q: "New Jersey grows 2/3 of the world's eggplants", a: "True"),
         Question(q: "The longest one syllabus word in the English language is 'screeched'", a: "True"),
-        Question(q: "In the movie Pulp Fiction, all clocks are stuck on 4:20", a: "True")
+        Question(q: "In the movie Pulp Fiction, all clocks are stuck on 4:20", a: "True"),
+        Question(q: "There are multiple words in the English language rhymes with month, silver or purple", a: "False"),
+        Question(q: "Dreamt is not the only word in the English Language that ends with mt", a: "False"),
+        Question(q: "The name of the 50 states are on the back of the 5 dollar bill", a: "True"),
+        Question(q: "Almonds are a member of the peach family", a: "True")
     ]
     
     var questionNumber = 0
