@@ -29,4 +29,12 @@ struct QuizBrain {
     ]
     
     var questionNumber = 0
+    
+    func checkAnswer(_ userAnswer: String) {
+        if userAnswer == quizQuestions[questionNumber].answer {
+            
+        } else {
+            
+        }
+    }
 }
