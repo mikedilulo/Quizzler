@@ -26,20 +26,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         progressBar.transform = progressBar.transform.scaledBy(x: 1, y: 8)
-        questionLabel.text = quizQuestions[questionNumber][0]
         
-
+        updateUI()
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
         let userAnswer = sender.currentTitle
         let actualAnswer = quizQuestions[questionNumber][1]
-
+        
         if userAnswer == actualAnswer {
             print("Right!")
         } else {
             print("Wrong!")
         }
+        
+        if questionNumber + 1 < quizQuestions.count {
+            questionNumber += 1
+        } else {
+            questionNumber = 0
+        }
+        updateUI()
     }
     
     func updateUI() {
